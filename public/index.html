@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dienstreiseplaner Gifhorn – Pilot</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="supported-color-schemes" content="light dark" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Dienstreiseplaner Gifhorn</h1>
+        <p class="sub">Kosten, Energie & Zeit im Überblick · Pilot</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Eingaben</h2>
+      <form id="planForm" class="grid" novalidate>
+        <div>
+          <label for="start">Startadresse <span class="req">*</span></label>
+          <input id="start" required placeholder="Amselfeld 4c, 38179 Schwülper"
+                 autocomplete="street-address" inputmode="text" />
+        </div>
+        <div>
+          <label for="ziel">Zieladresse <span class="req">*</span></label>
+          <input id="ziel" required placeholder="Schlossplatz 1, 38518 Gifhorn"
+                 autocomplete="street-address" inputmode="text" />
+        </div>
+        <div>
+          <label for="datum">Datum <span class="req">*</span></label>
+          <input id="datum" type="date" required aria-describedby="datum-hilfe" />
+          <small id="datum-hilfe" class="help">Format: TT.MM.JJJJ. Datum darf nicht in der Vergangenheit liegen.</small>
+        </div>
+        <div>
+          <label for="beginn">Beginn (Uhrzeit) <span class="r
